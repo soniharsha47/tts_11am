@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form name="myform" onsubmit="return valid()">
+        <!-- <input type="text" id="uname" /> -->
+        <!-- <span id="uerr"></span> -->
+        <!-- <input type="password" id="pass" /> -->
+        <span id="passerr"></span>
+        <!-- <input type="number" id="num" /> -->
+        <span id="numer"></span>
+        <input type="color" id="color">
+        <input type="range" id="range">
+        <input type="datetime-local" id="dtime" />
+        <input type="date" min="2022-02-10" />
+        <input type="submit" value="send" />
+    </form>
+
+    <script>
+        function valid(){
+
+            // let uname = document.forms['myform']['uname'].value;
+            // let pass = document.forms['myform']['pass'].value;
+            // let number = document.forms['myform']['num'].value;
+            let color = document.forms['myform']['color'].value;
+            let range = document.forms['myform']['range'].value;
+            let dtime = document.forms['myform']['dtime'].value;
+
+            console.log(color)
+            console.log(range)
+            console.log(dtime)
+
+            // if(uname==''){
+            //     document.getElementById('uerr').innerHTML = 'Please Enter Username';
+            //     document.getElementById('uname').style.borderColor='red'
+            //     return false;
+            // }
+            // else if(uname.length<=1){
+            //     document.getElementById('uerr').innerHTML = 'Username should be more than 1 character';
+            //     document.getElementById('uname').style.borderColor='blue'
+            //     return false;
+            // }
+            // else if(pass==''){
+            //     document.getElementById('passerr').innerHTML = 'Please Enter Password';
+            //     document.getElementById('pass').style.borderColor='red'
+            //     return false;
+            // }
+            // else if(number<5){
+            //     document.getElementById('numer').innerHTML = 'Quantity should be more than 5';
+            //     document.getElementById('num').style.borderColor='green';
+            //     return false;
+            // }
+            // else if(number>15){
+            //     document.getElementById('numer').innerHTML = 'Quantity should not more than 15';
+            //     document.getElementById('num').style.borderColor='green';
+            //     return false;
+            // }
+            return false;
+        }
+    </script>
+</body>
+</html>

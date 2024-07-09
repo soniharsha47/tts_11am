@@ -1,0 +1,21 @@
+const di=[{
+    "name":"grras",
+    'age':20,
+    'location':[
+        'ahmedabad',
+        'surat',
+        'mumbai'
+    ]
+},
+{
+    "name":"Solution",
+    'age':27,
+    'location':[
+        'ahmedabad',
+        'surat',
+        'mumbai'
+    ]
+}
+]
+console.log(di);
+console.log(typeof(di));

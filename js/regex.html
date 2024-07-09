@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx | Regular Expression</title>
+</head>
+<body>
+    <h1>RegEx</h1>
+
+    <script>
+        // match | search
+
+        var st = 'EJIFDK&$#(h4783)';
+        document.write(st.match(/[0-z]/g));
+        var number=st.match(/[0-9]/g);
+        var lowerr=st.match(/[a-z]/g);
+        var uperr=st.match(/[A-Z]/g);
+        var specialcharacter=st.match(/[!-/:-@[-`{-~}]/g)
+        console.log(specialcharacter)
+       
+        if(uperr==null | number==null | lowerr==null | specialcharacter==null ){
+            console.log("Invalid password")
+        }
+
+    </script>
+    
+</body>
+</html>

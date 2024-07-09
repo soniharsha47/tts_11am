@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern</title>
+</head>
+<body>
+
+
+    <script>
+
+        let ar = ["id:name:location:['jaipur','udaipur']","id:name:location:['jaipur','udaipur']","id:name:location:['jaipur','udaipur']"]
+
+        for(row=0;row<4;row++){
+            for(col=0;col<5;col++){
+                document.write('*')
+            }
+            document.write('<br/>')
+        }
+        document.write('---------------------------<br/>');
+        for(row=0;row<6;row++){
+            for(col=0;col<row+1;col++){
+                document.write('*')
+            }
+            document.write('<br/>')
+        }
+        document.write('---------------------------<br/>');
+        for(row=0;row<6;row++){
+            for(col=0;col<6-row;col++){
+                document.write('*')
+            }
+            document.write('<br/>')
+        }
+        document.write('---------------------------<br/>');
+        for(row=0;row<5;row++){
+            for(col=0;col<5;col++){
+                if(row==0 | row==2 | col==0 | col==4){
+                    document.write('*')
+                }
+                else{
+                    document.write('&nbsp;&nbsp;');
+                }
+            }
+            document.write('<br/>')
+        }
+        document.write('---------------------------<br/>');
+        for(row=0;row<5;row++){
+            for(col=0;col<4;col++){
+                if(col==0 | row+col==3 | row-col==1){
+                    document.write('*')
+                }
+                else{
+                    document.write('&nbsp;&nbsp;');
+                }
+            }
+            document.write('<br/>')
+        }
+        
+    </script>
+    <!-- 
+            *****
+            *****
+            *****
+            ***** 
+    -->
+</body>
+</html>

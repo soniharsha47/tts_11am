@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment API</title>
+    <style>
+        #comment{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .cmd{
+            border:  2px  solid black;
+            height: 250px;
+            width: 250px;
+            margin: 1%;
+            padding: 1%;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body ononline="alert('Connection back !!')" onoffline="alert('Connection lost.....')">
+
+    <h1>Comment API</h1>
+    <div id="comment">
+            <h2 id="load" style="position: absolute;">Loading...........</h2>
+    </div>
+    
+
+    <script>
+        async function api(){
+            var api = await fetch("https://jsonplaceholder.typicode.com/comments");
+            var json = await api.json();
+            // document.getElementById('comment').innerHTML=json[0]['body'];
+            for(i=0;i<json.length;i++){
+                document.getElementById('comment').innerHTML+=`<div class='cmd'>
+                    Post id : ${json[i]['postId']} <br/>
+                    Comment id : ${json[i]['id']}<br/>
+                    Name : ${json[i]['name']}<br/>
+                    Email : ${json[i]['email']}<br/>
+                    Comment is : ${json[i]['body']}</div> <br/>`
+            }
+        }
+        // api();
+        setTimeout(()=>{
+            api();
+            document.getElementById('load').style.visibility='hidden'
+        },3000)
+    </script>
+
+</body>
+</html>

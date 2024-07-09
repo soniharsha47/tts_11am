@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <!-- 
+        name        -> indentity
+        onsubmit    -> js calling
+        action      -> backend api
+        method      -> get(insecure-> plain text) / post(secure-> encrypt) uname=grras -> weihfkjdef=hwdsjfyeuwjd
+     -->
+    <form name="" onsubmit="" action="" method="">
+        <label>User name : </label>
+        <input />
+        <!-- 
+            type    -> email, date, time, file, range etc
+            name    -> backend
+            id      -> js
+            value   -> default value
+            placeholder -> watermark
+            min         -> minimum value
+            max         -> maximum value
+            minlength   -> minimum length -> contact 10
+            maxlength   -> maximum length
+            required    -> required field
+            readonly    -> u cant change value but that value will be store in db
+            disable     -> u cant change value and that will will not be store inndb
+         -->
+         <input type="text" />
+         <input type="email" />
+         <input type="url" />
+         <input type="tel" maxlength="10" minlength="10" />
+         <input type="number"  min="1" max="15" />
+         <input type="search" />
+         <input type="password" />
+         <br><br>
+         <input type="month" />
+         <input type="week" />
+         <input type="date" />
+         <input type="time" />
+         <input type="datetime-local" />
+         <br><br>
+         <input type="file" />
+         <input type="color" />
+         <input type="range" />
+         <br><br>
+         <select>
+            <option>op 1</option>
+         </select>
+         <br><br>
+         <label>Gender</label>
+         <input type="radio" />Male
+         <input type="radio" />Female
+         <input type="radio" />Other
+         <br><br>
+         <label>Hobbies</label>
+         <input type="checkbox" />Cricket
+         <input type="checkbox" />Football
+         <input type="checkbox" />Chess
+         <br><br>
+         <input type="submit" />
+         <input type="reset" />
+
+    </form>
+</body>
+</html>

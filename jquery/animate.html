@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Slid</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        .box{
+            background-color: green;
+            height: 300px;
+            width: 100%;
+            position: absolute;
+        }
+        .box1{
+            background-color: bisque;
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="animate">click to start animation</div>
+    <div class="box"></div>
+    <div class="box1"></div>
+
+    <script>
+        $(document).ready(function(){
+                $('.animate').click(()=>{
+                    $('.box').animate({left:"-500px"})
+                    $('.box1').animate({left:"0px"})
+                })
+        })
+    </script>
+</body>
+</html>

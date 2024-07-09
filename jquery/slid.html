@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Slid</title>
+    <style>
+        .box{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="hide">Slid up</div>
+    <div class="show">Slid down</div>
+    <div class="toggle">Toogle slid</div>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, perspiciatis, enim beatae commodi esse nam alias sed tenetur quos ex dignissimos repudiandae? Perferendis illo quisquam, alias, asperiores at commodi ratione veniam earum dolorum odit adipisci et! Ipsum numquam magnam, tenetur aperiam sit quaerat voluptates sed saepe eaque? Quis fugiat delectus accusantium veritatis, dicta facere atque illum! Omnis possimus repellat cum ea odit neque ab sunt corporis quisquam beatae, quam vitae consectetur quas minima ratione provident blanditiis rerum laboriosam dignissimos, eaque atque nam laudantium exercitationem fugiat. Ratione enim unde quis praesentium rerum consequuntur, quo maiores quia exercitationem, nam consectetur aperiam saepe.</div>
+
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(()=>{
+                $('.box').slideUp(2000);
+            })
+            $('.show').click(()=>{
+                $('.box').slideDown(2000);
+            })
+            $('.toggle').click(()=>{
+                $('.box').slideToggle(2000);
+            })
+        })
+    </script>
+</body>
+</html>

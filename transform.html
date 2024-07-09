@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .rotate{
+            height: 200px;
+            width: 200px;
+            /* background-color: gray; */
+            border: 50px solid red;
+            margin-left: 20%;
+            margin-top: 5%;
+            border-top: 50px solid yellow;
+            border-radius: 100%;
+            transition-duration: 5s;
+        }
+        .rotate:hover{
+            transform: rotate(360deg);
+        }
+
+        .skew{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin-left: 15%;
+            margin-top: 5%;
+            transform: skew(10deg,15deg);
+            /* transform: skewX(15deg); */
+            box-shadow: 5px 5px 0px black;
+        }
+        .container{
+            margin-top: 5%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .scale{
+            height: 200px;
+            width: 200px;
+            background-color: teal;
+            border: 2px solid black;
+            transition-duration: 5s;
+            transform-origin: left;
+        }
+        .scale:hover{
+            transform: scaleX(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate">Rotate</div>
+    <div class="skew">skew</div>
+
+    <div class="container">
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+        <div class="scale">Scale</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<body>
+    <h1>Search regEx</h1>
+
+    <script>
+        let st = 'grras@onmicrosoft.com';
+
+        // document.write(st.match('@'))
+        // document.write(st.search('@')+'<br/>')
+        // document.write(st[st.search('@')+1]+'<br/>')
+        // document.write(st[st.search('@')-1]+'<br/>')
+
+        let prestatement=st[st.search('@')-1]
+        let afterstatement=st[st.search('@')+1]
+
+        let slicee= st.slice(st.search('@')+1)
+        // document.write(afterstatement+'<br/>')
+        document.write(slicee+'<br/>')
+        if(prestatement==undefined || afterstatement==undefined || slicee!="yahoo.com" || slicee!="skype.com" || slicee!="gamil.com" ){
+            document.write('Invalid Email')
+        }
+        else{
+            document.write('valid ')
+        }
+
+
+    </script>
+    
+</body>
+</html>

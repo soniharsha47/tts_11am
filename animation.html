@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .ani{
+            height: 100px;
+            background-color: brown;
+            animation-name: ani1;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes ani1 {
+            0%{
+                background-color: white;
+                width: 0%;
+            }
+            20%{
+                background-color: rgb(38, 14, 73);
+                width: 30%;
+            }
+            50%{
+                height: 300px;
+                width: 70%;
+                background-color: bisque;
+            }
+            80%{
+                width: 30%;
+                height: 50px;
+                background-color: teal;
+            }
+            100%{
+                background-color: tomato;
+                width: 100%;
+                height: 100px;
+            }
+        }
+
+        @keyframes ani {
+            from{
+                width: 0;
+            }
+            to{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ani"></div>
+</body>
+</html>

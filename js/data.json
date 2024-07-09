@@ -1,0 +1,12 @@
+[
+    {
+        "Name":"Grras",
+        "age":20,
+        "Location":["Jaipur","Ahmedabad","Mehsana"]
+    },
+    {
+        "Name":"ABC",
+        "age":20,
+        "Location":["Jaipur","Ahmedabad","Mehsana"]
+    }
+]

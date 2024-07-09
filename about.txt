@@ -1,0 +1,27 @@
+>> What is HTML ?
+    .. Hyper Text   :  it will redirect u on the another page
+    .. Markup       :  design 
+    .. Language     :  the way you choose to communicate
+
+>> tags & elements 
+    
+    <>          -> tags / fragment
+    h1,html,p   -> elements
+    <h1>        -> tag
+
+>> Root element -> html
+
+>> How to create webpage ?
+    .. fileName.html
+        >> shift + !
+        >>> <!DOCTYPE html> -- statement
+            <html lang="en"> 
+                <head> -- head -> tabBar + meta data
+                    <meta charset="UTF-8"> -- encoding format
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -- css - responsive
+                    <title>Document</title> -- summary
+                </head>
+                <body>
+                     all your content will store here
+                </body>
+            </html>

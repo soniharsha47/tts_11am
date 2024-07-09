@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse effect</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1
+        onmouseenter="this.style.backgroundColor='red'"
+        onmouseleave="this.style.backgroundColor='green'"
+        onmouseup="this.innerHTML='You clicked !!!'"
+        onmousedown="this.style.backgroundColor='blue'"
+    >
+        mouse event
+    </h1>
+</body>
+</html>

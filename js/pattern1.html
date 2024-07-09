@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern 1</title>
+    <style>
+        #code{
+            border: 2px solid black;
+            display: inline-block;
+        }
+        #outpur{
+            border: 2px solid black;
+            width: 300px;
+            /* height: 200px; */
+            display: flex;
+            padding: 5%;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="code" contenteditable="true"></div>
+    <div id="outpur"></div>
+    <script>
+        document.write('---------------------------<br/>');
+        var value=prompt('HEy user enter your choice : ')
+        
+        var patter='';
+        if(value=='A' | value=='a')
+            {    
+                        for(row=0;row<6;row++){
+                            for(col=0;col<5;col++){
+                                if((col==2 & row>1)  | (row-col==0 & row<=1) | (row+col==4 & row<=1) ){
+                                    // document.write('*')
+                                    patter=patter+'*'
+                                }
+                                else{
+                                    // document.write('&nbsp;&nbsp;');
+                                    patter=patter+'&nbsp;&nbsp;'
+                                }
+                            }
+                            // document.write('<br/>')
+                            patter=patter+'<br/>'
+                        }
+                        document.getElementById('outpur').innerHTML=patter;
+                        document.getElementById('code').innerHTML=`for(row=0;row<6;row++){<br/>
+                            for(col=0;col<5;col++){<br/>
+                                if((col==2 & row>1)  | (row-col==0 & row<=1) | (row+col==4 & row<=1) ){<br/>
+                                    document.write('*')<br/>
+                                }<br/>
+                                else{<br/>
+                                    document.write('&nbsp;&nbsp;');<br/>
+                                }<br/>
+                            }<br/>
+                            document.write('<br/>')<br/>
+                        }<br/>`;
+
+            }
+         
+        document.write('---------------------------<br/>');
+        for(row=0;row<5;row++){
+            for(col=0;col<5;col++){
+                if(row==0 | col==0 | (row==4 & col<3) | (col==2 & row>1) | (row==2 & col>1) | (col==4 & row>1) ){
+                    document.write('*')
+                }
+                else{
+                    document.write('&nbsp;&nbsp;');
+                }
+            }
+            document.write('<br/>')
+        }
+        document.write('---------------------------<br/>');
+        for(row=0;row<5;row++){
+            for(col=0;col<5;col++){
+                if((row==0 & col!=4) | (col==3 & row!=4) | (col==0 & row!=4) | (row==3 & col!=4) | (row-col==0 & row>1) ){
+                    document.write('*')
+                }
+                else{
+                    document.write('&nbsp;&nbsp;');
+                }
+            }
+            document.write('<br/>')
+        }
+    </script>
+    
+</body>
+</html>
